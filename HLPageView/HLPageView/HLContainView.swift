@@ -10,22 +10,32 @@ import UIKit
 
 class HLContainView: UIView {
 
-    var titles :[String]
     var childVcs :[UIViewController]
-    var style :HLPageStyle
     var parentVc :UIViewController
     
     
-    init(frame: CGRect,titles :[String],style: HLPageStyle,childVcs:[UIViewController],parentVc:UIViewController) {
-        self.titles = titles
-        self.style = style
+    init(frame: CGRect,childVcs:[UIViewController],parentVc:UIViewController) {
+       
         self.childVcs = childVcs
         self.parentVc = parentVc
         super.init(frame: frame)
+        setupUI()
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    
 
+}
+
+
+extension HLContainView {
+    fileprivate func setupUI(){
+ 
+        
+        
+        
+    }
 }

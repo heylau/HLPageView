@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let pageviewF = CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height)
+        let pageviewF = CGRect(x: 0, y: 64, width: view.bounds.width, height: view.bounds.height - 64)
         
         let titles = ["首页","库存","销售","基础"]
         
@@ -21,14 +21,14 @@ class ViewController: UIViewController {
         for  _ in 0..<titles.count {
             let vc = UIViewController()
             
-            vc.view.backgroundColor = UIColor(red: CGFloat(arc4random_uniform(256))/255.0, green: CGFloat(arc4random_uniform(256))/255.0, blue: CGFloat(arc4random_uniform(256))/255.0, alpha: 1)
+            vc.view.backgroundColor = UIColor.randomColor()
             
             childVcs.append(vc)
         }
         
-        var style = HLPageStyle()
-        style.titleHeight = 44
-        let pageView = HLContainView(frame: pageviewF, titles: titles, style: style, childVcs: childVcs, parentVc: self)
+        let style = HLPageStyle()
+//        style.titleHeight = 44
+        let pageView = HLPageView(frame: pageviewF, titles: titles, style: style, childVcs: childVcs, parentVc: self)
         
         view.addSubview(pageView)
         
