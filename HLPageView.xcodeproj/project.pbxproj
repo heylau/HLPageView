@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A0871351E8958D400EBD14D /* gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4A0871341E8958D400EBD14D /* gif.gif */; };
 		4A311EE61E7A89A500A15F7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A311EE51E7A89A500A15F7D /* AppDelegate.swift */; };
 		4A311EE81E7A89A500A15F7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A311EE71E7A89A500A15F7D /* ViewController.swift */; };
 		4A311EEB1E7A89A500A15F7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A311EE91E7A89A500A15F7D /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A0871341E8958D400EBD14D /* gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif.gif; sourceTree = "<group>"; };
 		4A311EE21E7A89A500A15F7D /* HLPageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HLPageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A311EE51E7A89A500A15F7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A311EE71E7A89A500A15F7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				4A311EEC1E7A89A500A15F7D /* Assets.xcassets */,
 				4A311EEE1E7A89A500A15F7D /* LaunchScreen.storyboard */,
 				4A311EF11E7A89A500A15F7D /* Info.plist */,
+				4A0871341E8958D400EBD14D /* gif.gif */,
 			);
 			path = HLPageView;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A311EF01E7A89A500A15F7D /* LaunchScreen.storyboard in Resources */,
+				4A0871351E8958D400EBD14D /* gif.gif in Resources */,
 				4A311EED1E7A89A500A15F7D /* Assets.xcassets in Resources */,
 				4A311EEB1E7A89A500A15F7D /* Main.storyboard in Resources */,
 			);
