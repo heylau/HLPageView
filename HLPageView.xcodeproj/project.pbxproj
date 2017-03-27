@@ -16,7 +16,7 @@
 		4A311EFB1E7A89E000A15F7D /* HLPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A311EFA1E7A89E000A15F7D /* HLPageView.swift */; };
 		4A311EFD1E7A89EA00A15F7D /* HLTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A311EFC1E7A89EA00A15F7D /* HLTitleView.swift */; };
 		4A311EFF1E7A8A1700A15F7D /* HLPageStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A311EFE1E7A8A1700A15F7D /* HLPageStyle.swift */; };
-		4A311F1F1E7AB03000A15F7D /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A311F1E1E7AB03000A15F7D /* UIColor-Extension.swift */; };
+		4ADB8EC81E89504200774AFF /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADB8EC71E89504200774AFF /* UIColor-Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 		4A311EFA1E7A89E000A15F7D /* HLPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HLPageView.swift; sourceTree = "<group>"; };
 		4A311EFC1E7A89EA00A15F7D /* HLTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HLTitleView.swift; sourceTree = "<group>"; };
 		4A311EFE1E7A8A1700A15F7D /* HLPageStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HLPageStyle.swift; sourceTree = "<group>"; };
-		4A311F1E1E7AB03000A15F7D /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor-Extension.swift"; path = "../UIColor-Extension.swift"; sourceTree = "<group>"; };
+		4ADB8EC71E89504200774AFF /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +82,7 @@
 				4A311EF81E7A89D900A15F7D /* HLContainView.swift */,
 				4A311EFC1E7A89EA00A15F7D /* HLTitleView.swift */,
 				4A311EFE1E7A8A1700A15F7D /* HLPageStyle.swift */,
-				4A311F1E1E7AB03000A15F7D /* UIColor-Extension.swift */,
+				4ADB8EC71E89504200774AFF /* UIColor-Extension.swift */,
 			);
 			path = HLPageView;
 			sourceTree = "<group>";
@@ -161,11 +161,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A311EFD1E7A89EA00A15F7D /* HLTitleView.swift in Sources */,
+				4ADB8EC81E89504200774AFF /* UIColor-Extension.swift in Sources */,
 				4A311EF91E7A89D900A15F7D /* HLContainView.swift in Sources */,
 				4A311EE81E7A89A500A15F7D /* ViewController.swift in Sources */,
 				4A311EE61E7A89A500A15F7D /* AppDelegate.swift in Sources */,
 				4A311EFF1E7A8A1700A15F7D /* HLPageStyle.swift in Sources */,
-				4A311F1F1E7AB03000A15F7D /* UIColor-Extension.swift in Sources */,
 				4A311EFB1E7A89E000A15F7D /* HLPageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
