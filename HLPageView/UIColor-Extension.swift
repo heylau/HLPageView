@@ -59,4 +59,11 @@ extension UIColor{
         
       self.init(r: CGFloat(r),g:CGFloat(g) ,b: CGFloat(b))
     }
+    
+    func getRGBValue() -> (CGFloat,CGFloat,CGFloat) {
+        guard let cmps = cgColor.components else {
+             fatalError("请确认该颜色由RGB创建")
+        }
+        return (cmps[0] * 255.0,cmps[1] * 255.0,cmps[2] * 255.0)
+    }
 }

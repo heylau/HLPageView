@@ -50,6 +50,8 @@ extension HLPageView {
         addSubview(containView)
         
         
+        titleView.delegate = containView
+        containView.delegate = titleView
 
    
     }
