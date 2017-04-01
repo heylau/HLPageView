@@ -17,14 +17,14 @@ Pod::Spec.new do |s|
 
   s.name         = "HLPageView"
   s.version      = "0.0.1"
-  s.summary      = "Swift HLPageView小框架"
+  s.summary      = "Swift3.0.2 HLPageView小框架"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-s.description  = "Swift HLPageView小框架,随便写写"
+  s.description  = "wift3.0.2 HLPageView小框架,随便写写"
 
   s.homepage     = "https://github.com/heylau/HLPageView"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -89,8 +89,9 @@ s.description  = "Swift HLPageView小框架,随便写写"
   #  Not including the public_header_files will make all headers public.
   #
 
-s.source_files  = "HLPageView"
+  s.source_files  = "HLPageView/*.swift"
   s.exclude_files = "Classes/Exclude"
+ s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
 
   # s.public_header_files = "Classes/**/*.h"
 
