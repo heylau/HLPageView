@@ -1,6 +1,6 @@
 # HLPageView
 ### 自己项目需要用,所以封装了一个小框架
-#### 样式头文件在HLPageStyle,项目全Swift编写
+#### 样式头文件在HLPageStyle,项目全Swift3.0.2编写
 
 ``` javascript
 target 'MyApp' do
