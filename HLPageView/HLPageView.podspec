@@ -17,16 +17,16 @@ Pod::Spec.new do |s|
 
   s.name         = "HLPageView"
   s.version      = "0.0.1"
-  s.summary      = "Swift3.0.2 HLPageView小框架"
+  s.summary      = "Swift3.0.2  HLPageView小框架"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = "wift3.0.2 HLPageView小框架,随便写写"
+  s.description  = "Swift3.0.2  HLPageView小框架,随便写写"
 
-  s.homepage     = "https://github.com/heylau/HLPageView"
+  s.homepage     = "https://github.com/heylau/HLPageView.git"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -66,10 +66,10 @@ Pod::Spec.new do |s|
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
-  # s.ios.deployment_target = "5.0"
-  # s.osx.deployment_target = "10.7"
-  # s.watchos.deployment_target = "2.0"
-  # s.tvos.deployment_target = "9.0"
+s.ios.deployment_target = '8.0'
+s.osx.deployment_target = '10.10'
+s.tvos.deployment_target = '9.0'
+s.watchos.deployment_target = '2.0'
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,7 +91,6 @@ Pod::Spec.new do |s|
 
   s.source_files  = "HLPageView/*.swift"
   s.exclude_files = "Classes/Exclude"
- s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
 
   # s.public_header_files = "Classes/**/*.h"
 
