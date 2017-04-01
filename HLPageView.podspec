@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
 s.description  = "Swift HLPageView小框架,随便写写"
 
-  s.homepage     = "http://EXAMPLE/HLPageView"
+  s.homepage     = "https://github.com/heylau/HLPageView"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -37,7 +37,7 @@ s.description  = "Swift HLPageView小框架,随便写写"
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
+  s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -78,7 +78,7 @@ s.description  = "Swift HLPageView小框架,随便写写"
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/HLPageView.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/heylau/HLPageView.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,7 +89,7 @@ s.description  = "Swift HLPageView小框架,随便写写"
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+s.source_files  = "HLPageView"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
