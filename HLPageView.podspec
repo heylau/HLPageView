@@ -78,7 +78,7 @@ s.author             = { "heylau" => "iheylau@icloud.com" }
 #  Supports git, hg, bzr, svn and HTTP.
 #
 
-s.source       = { :git => "https://github.com/heylau/HLPageView.git", :tag => "#{s.version}" }
+s.source       = { :git => "https://github.com/heylau/HLPageView.git", :commit => "03d5f5659bcaecbcae40f6c5809afc1db96d0d87" }
 
 
 # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
