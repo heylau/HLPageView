@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = "Swift3.0.2 HLPageView小框架,随便写写"
 
-  s.homepage     = "http://EXAMPLE/HLPageView"
+  s.homepage     = "https://github.com/heylau/HLPageView.git"
   # s.screenshots  = "https://github.com/heylau/HLPageView.git", "www.example.com/screenshots_2.gif"
 
 
