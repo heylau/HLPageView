@@ -8,3 +8,4 @@ target 'MyApp' do
 end
 ```
  ![image](https://github.com/heylau/HLPageView/blob/master/HLPageView/gif.gif)
+![image](https://github.com/heylau/HLPageView/blob/master/HLPageView/haha.gif)
