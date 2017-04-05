@@ -19,6 +19,7 @@
 		4A311EFF1E7A8A1700A15F7D /* HLPageStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A311EFE1E7A8A1700A15F7D /* HLPageStyle.swift */; };
 		4ACB748B1E939BD9003B51A0 /* HLPageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACB748A1E939BD9003B51A0 /* HLPageCollectionView.swift */; };
 		4ACB748D1E93AD6A003B51A0 /* HLPageCollecitonLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACB748C1E93AD6A003B51A0 /* HLPageCollecitonLayout.swift */; };
+		4ACB748F1E95125B003B51A0 /* haha.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4ACB748E1E95125B003B51A0 /* haha.gif */; };
 		4ADB8EC81E89504200774AFF /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADB8EC71E89504200774AFF /* UIColor-Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		4A311EFE1E7A8A1700A15F7D /* HLPageStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HLPageStyle.swift; sourceTree = "<group>"; };
 		4ACB748A1E939BD9003B51A0 /* HLPageCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HLPageCollectionView.swift; sourceTree = "<group>"; };
 		4ACB748C1E93AD6A003B51A0 /* HLPageCollecitonLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HLPageCollecitonLayout.swift; sourceTree = "<group>"; };
+		4ACB748E1E95125B003B51A0 /* haha.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = haha.gif; sourceTree = "<group>"; };
 		4ADB8EC71E89504200774AFF /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +79,7 @@
 				4A311EEC1E7A89A500A15F7D /* Assets.xcassets */,
 				4A311EEE1E7A89A500A15F7D /* LaunchScreen.storyboard */,
 				4A311EF11E7A89A500A15F7D /* Info.plist */,
+				4ACB748E1E95125B003B51A0 /* haha.gif */,
 				4A0871341E8958D400EBD14D /* gif.gif */,
 			);
 			path = HLPageView;
@@ -158,6 +161,7 @@
 			files = (
 				4A311EF01E7A89A500A15F7D /* LaunchScreen.storyboard in Resources */,
 				4A0871351E8958D400EBD14D /* gif.gif in Resources */,
+				4ACB748F1E95125B003B51A0 /* haha.gif in Resources */,
 				4A311EED1E7A89A500A15F7D /* Assets.xcassets in Resources */,
 				4A311EEB1E7A89A500A15F7D /* Main.storyboard in Resources */,
 			);

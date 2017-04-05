@@ -14,10 +14,23 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        HLPageCollectionViewDemo()
+        
+        
+//        HLPageViewDemo()
+        
+    }
+
+
+}
+
+extension ViewController :HLPageCollecitonViewDataSource{
+    //MARK:- 自定义表情框Demo
+    func HLPageCollectionViewDemo() {
         automaticallyAdjustsScrollViewInsets = false
         let pageFrame = CGRect(x: 0, y: 100, width:view.bounds.width, height: 300)
         
-        let titles = ["热门","高级","专属","豪华"]
+        let titles = ["one","two","three","four"]
         
         var style = HLPageStyle()
         
@@ -29,7 +42,7 @@ class ViewController: UIViewController {
         layout.lineMargin = 30
         layout.cols = 6
         layout.rows = 3
-
+        
         
         let pageCollectionView = HLPageCollectionView(frame: pageFrame, titles: titles, style: style, layout: layout)
         
@@ -40,10 +53,30 @@ class ViewController: UIViewController {
         
 
     }
-
+    func numberOfSectionInPageCollectionView(_ pageCollectionView: HLPageCollectionView) -> Int {
+        return 4
+    }
     
+    func pageCollectionView(_ pageCollectionView: HLPageCollectionView, numberOfSection section: Int) -> Int {
+        return 30
+    }
+    
+    func pageCollectionView(_ pageCollectionView: HLPageCollectionView, _ collectionView: UICollectionView, cellAtIndexPath indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath)
+        
+        cell.backgroundColor = UIColor.randomColor()
+        
+        return cell
+    }
+}
 
-    func HLPageViewInit()  {
+
+
+
+//MARK:- PageViewDemo
+extension ViewController {
+    func HLPageViewDemo()  {
+        
         let pageviewF = CGRect(x: 0, y: 64, width: view.bounds.width, height: view.bounds.height - 64)
         
         let titles = ["首页","库存","销售","基础","首页库存","库存库存","销售库存","基础库存"]
@@ -64,26 +97,9 @@ class ViewController: UIViewController {
         let pageView = HLPageView(frame: pageviewF, titles: titles, style: style, childVcs: childVcs, parentVc: self)
         
         view.addSubview(pageView)
-
+        
     }
-
 
 }
 
-extension ViewController :HLPageCollecitonViewDataSource{
-    func numberOfSectionInPageCollectionView(_ pageCollectionView: HLPageCollectionView) -> Int {
-        return 4
-    }
-    
-    func pageCollectionView(_ pageCollectionView: HLPageCollectionView, numberOfSection section: Int) -> Int {
-        return 30
-    }
-    
-    func pageCollectionView(_ pageCollectionView: HLPageCollectionView, _ collectionView: UICollectionView, cellAtIndexPath indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath)
-        
-        cell.backgroundColor = UIColor.randomColor()
-        
-        return cell
-    }
-}
+
