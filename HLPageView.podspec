@@ -78,12 +78,12 @@ s.author             = { "heylau" => "iheylau@icloud.com" }
 #  Supports git, hg, bzr, svn and HTTP.
 #
 
-s.source       = { :git => "https://github.com/heylau/HLPageView.git", :commit => "03d5f5659bcaecbcae40f6c5809afc1db96d0d87" }
+s.source       = { :git => "https://github.com/heylau/HLPageView.git", :commit => "305e135cfdb1d0cab4ca5f504720e5be11837766" }
 
-s.osx.deployment_target = "10.9"
 s.ios.deployment_target = "10.0"
-s.watchos.deployment_target = "2.0"
-s.tvos.deployment_target = "9.0"
+s.requires_arc = true
+
+ s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
 
 # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 #
@@ -93,7 +93,7 @@ s.tvos.deployment_target = "9.0"
 #  Not including the public_header_files will make all headers public.
 #
 
-s.source_files  = "Classes", "Classes/**/*.{h,m,swift}"
+s.source_files  = "HLPageView/HLPageView/*.swift"
 s.exclude_files = "Classes/Exclude"
 
 # s.public_header_files = "Classes/**/*.h"

@@ -30,7 +30,7 @@ struct HLPageStyle {
     //标题底部线条高度
     var bottomLineHeight :CGFloat = 2
     //标题文字缩放
-    var isScale :Bool = true
+    var isScale :Bool = false
     //标题文字最大缩放
     var maxScale :CGFloat = 1.2
     //标题遮盖颜色
@@ -38,7 +38,7 @@ struct HLPageStyle {
     //标题遮盖透明度
     var coverViewAlpha :CGFloat = 0.3
     //标题遮盖
-    var isShowCover :Bool = true
+    var isShowCover :Bool = false
     //标题遮盖高度
     var coverViewHeight :CGFloat = 25
     //标题遮盖圆角
@@ -47,5 +47,9 @@ struct HLPageStyle {
     var converViewMargin :CGFloat = 8
     //标题遮盖左右边距(不可滑动模式下)
     var coverViewLrEdge :CGFloat = 10
+    //pageView高度
+    var pageControlHeight :CGFloat = 20
+    //title显示位置
+    var isTitleInTop :Bool = true
     
 }

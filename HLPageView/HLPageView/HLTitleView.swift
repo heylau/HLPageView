@@ -179,42 +179,10 @@ extension HLTitleView{
             return
         }
         
-        let sourceLabel = titleLabels[currentIndex]
-        sourceLabel.textColor = style.normalColor
-        targetLabel.textColor = style.selectColor
-        
-        currentIndex = targetLabel.tag
-        
-        adjustLabelPosition()
-        
-        
-        delegate?.titleView(self, targetIndex: currentIndex)
-        
-        if style.isShowBottomLine {
-            UIView.animate(withDuration: 0.25, animations: { 
-              
-                self.bottomLine.frame.origin.x = targetLabel.frame.origin.x
-                self.bottomLine.frame.size.width = targetLabel.frame.size.width
+        delegate?.titleView(self, targetIndex: targetLabel.tag)
 
-            })}
         
-        if  style.isScale {
-            UIView.animate(withDuration: 0.25, animations: { 
-                sourceLabel.transform = CGAffineTransform.identity
-                targetLabel.transform = CGAffineTransform(scaleX: self.style.maxScale, y: self.style.maxScale)
-            })
-        }
-        
-        if style.isShowCover {
-            UIView.animate(withDuration: 0.25, animations: { 
-                self.coverView.frame.origin.x = self.style.isSrollEnable ? targetLabel.frame.origin.x - self.style.converViewMargin :targetLabel.frame.origin.x + self.style.coverViewLrEdge
-                
-                self.coverView.frame.size.width = self.style.isSrollEnable ? (targetLabel.frame.size.width + self.style.converViewMargin * 2) : targetLabel.frame.width - self.style.coverViewLrEdge * 2
-            })
-            
-            
-        }
-        
+        dealLabel(targetLabel: targetLabel)
         
     }
     
@@ -290,4 +258,52 @@ extension HLTitleView :HLContainViewDelegate{
     }
     
 
+}
+
+
+extension HLTitleView {
+    func setCurrentIndex(_ index :Int){
+        let targetLabel = titleLabels[index]
+        dealLabel(targetLabel: targetLabel)
+        
+    }
+    
+    func dealLabel(targetLabel :UILabel)  {
+        let sourceLabel = titleLabels[currentIndex]
+        sourceLabel.textColor = style.normalColor
+        targetLabel.textColor = style.selectColor
+        
+        currentIndex = targetLabel.tag
+        
+        adjustLabelPosition()
+        
+        
+        
+        if style.isShowBottomLine {
+            UIView.animate(withDuration: 0.25, animations: {
+                
+                self.bottomLine.frame.origin.x = targetLabel.frame.origin.x
+                self.bottomLine.frame.size.width = targetLabel.frame.size.width
+                
+            })}
+        
+        if  style.isScale {
+            UIView.animate(withDuration: 0.25, animations: {
+                sourceLabel.transform = CGAffineTransform.identity
+                targetLabel.transform = CGAffineTransform(scaleX: self.style.maxScale, y: self.style.maxScale)
+            })
+        }
+        
+        if style.isShowCover {
+            UIView.animate(withDuration: 0.25, animations: {
+                self.coverView.frame.origin.x = self.style.isSrollEnable ? targetLabel.frame.origin.x - self.style.converViewMargin :targetLabel.frame.origin.x + self.style.coverViewLrEdge
+                
+                self.coverView.frame.size.width = self.style.isSrollEnable ? (targetLabel.frame.size.width + self.style.converViewMargin * 2) : targetLabel.frame.width - self.style.coverViewLrEdge * 2
+            })
+            
+            
+        }
+        
+
+    }
 }
